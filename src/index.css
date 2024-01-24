@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --speed: 500ms;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: #eea47f;
+  ;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 1rem;
+  /* position: relative; */
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.nav li.active {
+  color: blue;
+}
+
+.nav li:hover {
+  color: aquamarine;
+}
+
+/* .dropdownItem a {
+  max-width: 100px;
+  margin-left: 10px;
+  transition: var(--speed);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: blue;
+  border-radius: #fff;
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0;
+  border-top:1px solid black ;
+}
+.dropdown-menu ul li:hover a{
+  color: red;
+  cursor: pointer;
+}
+.dropdownItem{
+  display: flex;
+  margin: 10px auto;
+} */
+.ul {
+  position: relative;
+}
+
+.dropdownItem {
+  /* position:absolute; */
+  color: black;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px black;
+  padding: 20px;
+}
+
+/* .dropdownItem Link{
+ display:block ;
+ color: black;
+ text-decoration: none;
+ padding: 10px 15px;
+} */
+.menuTrigger {
+  background-color: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  color: black;
+  top: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-right: 3rem;
+}
+
+.menuTrigger:hover+.dropdown {
+  display: block;
+}
+
+.dropdown:hover {
+  display: block;
+}
